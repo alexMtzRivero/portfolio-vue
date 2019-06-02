@@ -1,18 +1,20 @@
 <template>
   <div class="home">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
-    <HelloWorld/>
+    <!-- <HelloWorld/> -->
+    <Pong/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-
+import Pong from '@/components/Pong.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    // HelloWorld,
+    Pong
   }
 }
 </script>

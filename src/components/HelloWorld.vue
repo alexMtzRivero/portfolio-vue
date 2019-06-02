@@ -58,7 +58,8 @@ export default {
 <style scoped>
   .main{
     margin: 1em;
-
+    width: 100%;
+    height: 100%;
   }
   h1{
     margin: 0.15em 0;
