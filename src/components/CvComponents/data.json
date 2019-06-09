@@ -1,0 +1,112 @@
+{
+    "name": "Alejandro Martinez Rivero",
+    "post": "Junior full stack developer",
+    "introduction": "Junior programmer with more 5 than years of experience in software development.",
+    "personalInformation": {
+        "mail": "alejandro.martinez.0598@gmail.com",
+        "phoneNumber": "(+33) 7 69 67 53 22",
+        "direction": "11 Rue Martin Gignoux, Grenoble 38000",
+        "birthDate": "25 Mai, 1998",
+        "webPage": "",
+        "gitHub": ""
+    },
+    "profesionalExperience": [{
+            "tittle": "Developeur fullstack/ Research Intern ",
+            "enterprise": "INRIA",
+            "place": " Grenoble, France",
+            "description": "To develop a graphical environment and a rule based system to model the behavior of connected devices and their usage in a smart home.",
+            "timeBegin": "01/2010",
+            "timeEnd": "Présent",
+            "skils": ["technologies:", "vue.js", "node.js", "java ", "sqLite"]
+        },
+        {
+            "tittle": "Coach",
+            "enterprise": "Mexican Olympiad in Informatics",
+            "place": "Mexico",
+            "description": "To teach high school students structured programming to calculate the solution of complex mathematical problems.",
+            "timeBegin": "08/2017",
+            "timeEnd": "04/2018",
+            "skils": ["technologies: c++"]
+        },
+        {
+            "tittle": "Developer ",
+            "enterprise": "Naby",
+            "enterpriseDescription": "Mobile application to hire baby sitters",
+            "place": "Mexico",
+            "description": "Programmer front and backend of the mobile app for Android ",
+            "timeBegin": "01/2018",
+            "timeEnd": "06/2018",
+            "skils": ["technologies: Java – Firebase"]
+        },
+        {
+            "tittle": "Developer",
+            "enterprise": "Posfm (Point of sale)",
+            "enterpriseDescription": " Point of sale site for small businesses",
+            "place": "Mexico",
+            "description": "optimize data consumption processes",
+            "timeBegin": "06/2017 ",
+            "timeEnd": "11/2017",
+            "skils": ["technologies: PHP ,JavaScript – MySql"]
+        }
+
+    ],
+    "education": [{
+            "diploma": "Bachelors - Mobile Systems and Nomad Interface",
+            "timeBegin": "09/2018 ",
+            "timeEnd": "Présent",
+            "school": "University Grenoble Alpes France"
+        },
+        {
+            "diploma": "TSU in communication technologies and digital systems",
+            "timeBegin": "07/2016",
+            "timeEnd": "06/2018",
+            "school": "Chihuahua Technological University Mexico"
+        }
+
+    ],
+    "skils": [
+        "French", "Spanish(ﬁrst language)", "Git", "UML",
+        "Conﬂict resolution", "Team work", "Proactive"
+    ],
+    "programingLenguages": [
+        {"name":"Java","level":5},
+        {"name":"Javascript","level":5},
+        {"name":"c++","level":5},
+        {"name":"Python","level":5},
+        {"name":"MySql","level":5}
+    ],
+    "interest": [
+        "Game design ",
+        "Crypto currencies ",
+        "Neural networks",
+        "Genetic algorithms"
+    ],
+
+    "personalProjects": [{
+            "name": "Automated Crypto trader ",
+            "timeBegin": "03/2019",
+            "timeEnd": "Présent",
+            "description": "Automated trader to make experiments with my own AI library and again knowledge in trading and Ai (Front end in vue.js and the Bitso Api to trade currencies)",
+            "skills": ""
+        },
+        {
+            "name": "'Greedy ﬁnguer' and 'Tod' (Android games)",
+            "timeBegin": "05/2015",
+            "timeEnd": "02/2017",
+            "description": "In the development of this two games I managed all the processes for the complete creation of an application, programming, level design, music, art, advertising and legal aspects involved in the publication of the games",
+            "skills": ""
+        },
+        {
+            "name": "Vitae",
+            "timeBegin": "01/2015",
+            "timeEnd": "05/2015",
+            "description": "Front end and backend programmer of the mobile application for Android that allows children with disabilities to communicate through a smart keyboard",
+            "skills": ""
+        }
+    ],
+    "achivements": [
+        "Bronze medal at the national level at theMexican Olympiad in Informatics (2015)",
+        "Two state-level silver medals at the Mexican Olympiad in Informatics (2014 – 2015)"
+    ]
+
+}

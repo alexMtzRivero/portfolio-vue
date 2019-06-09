@@ -1,7 +1,7 @@
 <template>
   <div class="">
     
-      <svg @mousemove="movePlayer($event)"  @mouseup="player.clicked = false">
+      <svg v-touch:moved="movePlayer($event)"  @mouseup="player.clicked = false">
 
          <foreignObject 
                 :x ='0'
@@ -17,7 +17,7 @@
                 :y="player.y"  
                 :width="player.width" 
                 :height="player.height"
-                @mousedown="player.clicked = true"
+               v-touch:tap="tapInPlayer($event)"
                >
          </rect>
           <rect  ref="enemy" :x="enemy.x" :y="enemy.y"  :width="enemy.width" :height="enemy.height"></rect>
@@ -72,7 +72,7 @@ export default {
         setTimeout(()=>{this.step()}, 20);
       },
       enemyBehavior:function(){
-        this.enemy.y = this.ball.y -(this.enemy.height/2)
+        this.enemy.y += this.ball.vSpeed + ((this.ball.vSpeed < 0)? 2:-2)
       },
       ballBehavior:function(){
         
@@ -115,13 +115,20 @@ export default {
         this.ball.y += this.ball.vSpeed;
       },
       movePlayer(event){
+         console.log("move player",event);
         if(this.player.clicked)
          this.player.y = event. clientY;
+      },
+      tapInPlayer(event){
+        console.log("tap in player",event);
+        
+        this.player.clicked = true;
       }
   },
   // on create
   mounted(){
-    console.log(this.ball,this.$refs);
+   // console.log(this.ball,this.$refs);
+    this.$refs.player.addEventListener("touchstart", this.tapInPlayer);
     this.step();  
   }
 }
