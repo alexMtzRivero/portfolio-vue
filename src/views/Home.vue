@@ -25,8 +25,8 @@ export default {
 .home{
   width: 100%;
   height: 100%;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   font-family: 'Ubuntu Mono', monospace;
 }
 </style>

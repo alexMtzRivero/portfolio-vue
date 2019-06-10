@@ -60,6 +60,8 @@ export default {
     margin: 1em;
     width: 100%;
     height: 100%;
+    background: black;
+    color: white;
   }
   h1{
     margin: 0.15em 0;

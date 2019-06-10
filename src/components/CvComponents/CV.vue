@@ -1,13 +1,13 @@
 <template>
   <div class="cv">
-    <div id="presentatin">
+    <div id="presentation">
       <div class="intro">
         <h1>{{info.name}}</h1>
         <h2>{{info.post}}</h2>
         <h3>{{info.introduction}}</h3>
       </div>
       <div class="central-img">
-      <img src="" alt="">
+      <img src="../../assets/profile.png" alt="">
       </div>
       <div class="personal-info">
           <ul>
@@ -85,5 +85,63 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.cv{
+   background: white;
+   color:rgb(18, 14, 22);
+   
+  
+}
+
+#presentation{
+  background: rgb(50, 50, 92);
+  color:whitesmoke;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2em;
+}
+#main{
+   display: flex;
+    padding: 1em;
+    margin: 0 1em ;
+}
+img{
+  width: 50%;
+  height: auto;
+  margin: auto 0;
+  border-radius: 50%;
+  border: solid .4rem rgba(0, 0, 0, 0.438);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+.intro{
+   width: 33%;
+}
+.personal-info{
+   width: 33%;
+}
+.central-img{
+  width: 33%;
+  text-align: center
+}
+.column{
+   width: 50%;
+   padding: 1em;
+}
+#main h1{
+  color:teal;
+}
+ul{
+  display:flexbox;
+  padding-left: 0px;
+}
+#main li{
+  background:teal;
+  color:wheat;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: auto;
+  display: inline-block;
+}
 
 </style>
