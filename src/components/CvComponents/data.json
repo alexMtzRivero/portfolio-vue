@@ -1,22 +1,22 @@
 {
     "name": "Alejandro Martinez Rivero",
     "post": "Junior full stack developer",
-    "introduction": "Junior programmer with more 5 than years of experience in software development.",
+    "introduction": "Junior programer with more 5 than years of experience in software development.",
     "personalInformation": {
         "mail": "alejandro.martinez.0598@gmail.com",
-        "phoneNumber": "(+33) 7 69 67 53 22",
-        "direction": "11 Rue Martin Gignoux, Grenoble 38000",
-        "birthDate": "25 Mai, 1998",
+        "phoneNumber": "(+52) 614 602 ",
+        "direction": "",
+        "birthDate": "25 May, 1998",
         "webPage": "",
         "gitHub": ""
     },
     "profesionalExperience": [{
-            "tittle": "Developeur fullstack/ Research Intern ",
+            "tittle": "Fullstack developer/ Research Intern ",
             "enterprise": "INRIA",
             "place": " Grenoble, France",
             "description": "To develop a graphical environment and a rule based system to model the behavior of connected devices and their usage in a smart home.",
-            "timeBegin": "01/2010",
-            "timeEnd": "Présent",
+            "timeBegin": "01/2019",
+            "timeEnd": "07/2019",
             "skils": ["technologies:", "vue.js", "node.js", "java ", "sqLite"]
         },
         {
@@ -53,7 +53,7 @@
     "education": [{
             "diploma": "Bachelors - Mobile Systems and Nomad Interface",
             "timeBegin": "09/2018 ",
-            "timeEnd": "Présent",
+            "timeEnd": "07/2019",
             "school": "University Grenoble Alpes France"
         },
         {
@@ -64,7 +64,7 @@
         }
 
     ],
-    "skils": [
+    "skills": [
         "French", "Spanish(ﬁrst language)", "Git", "UML",
         "Conﬂict resolution", "Team work", "Proactive"
     ],
