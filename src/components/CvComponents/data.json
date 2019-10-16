@@ -1,14 +1,13 @@
 {
     "name": "Alejandro Martinez Rivero",
     "post": "Junior full stack developer",
-    "introduction": "Junior programer with more 5 than years of experience in software development.",
+    "introduction": "Junior programer with more 5 than years of experience developing software.",
     "personalInformation": {
-        "mail": "alejandro.martinez.0598@gmail.com",
-        "phoneNumber": "(+52) 614 602 ",
-        "direction": "",
-        "birthDate": "25 May, 1998",
-        "webPage": "",
-        "gitHub": "github.com/alexMtzRivero"
+        "E-MAIL": "alejandro.martinez.0598@gmail.com",
+        "PHONE ": "(+52) 614 602 17 21 ",
+        "BIRTHDATE": "25 May, 1998",
+        "WEBSITE": "",
+        "GIT": "github.com/alexMtzRivero"
     },
     "profesionalExperience": [{
             "tittle": "Fullstack developer/ Research Intern ",

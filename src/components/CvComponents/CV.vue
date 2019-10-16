@@ -6,15 +6,16 @@
         <h1>{{info.name}}</h1>
         <h2>{{info.post}}</h2>
         <h3>{{info.introduction}}</h3>
+         <img src="../../assets/profile.png" alt="">
       </div>
      <div class="side-info">
         <div class="personal-info">
             <ul>
-              <li v-for="name in Object.keys(info.personalInformation)" :key="name">{{name}}: <br>{{info.personalInformation[name]}}</li>
+              <li v-for="name in Object.keys(info.personalInformation)" :key="name"><b>{{name}}</b> <br>{{info.personalInformation[name]}}<br><br><br></li>
             </ul>
         </div>
         <div class="central-img">
-        <img src="../../assets/profile.png" alt="">
+       
         </div>
      </div>
       
@@ -104,17 +105,18 @@ export default {
 .cv{
    background: #f2f2f2;
     color: #403433;
-    width:100%;
-    height:100%;
-    
+   width: 600px;
+   margin:auto;  
 }
 
 #presentation{
-  background: #025949;
+  background: rgb(110,145,95);
+  background: linear-gradient(33deg, rgba(110,145,95,1) 0%, rgba(2,89,73,1) 100%); 
   color:#f2f2f2;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2em;
+  border-radius: 20px 20px 0px 0px;
 }
 #main{
    display: flex;
@@ -129,6 +131,12 @@ img{
   border: solid .4rem rgba(0, 0, 0, 0.438);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
+}
+.personal-info li{
+  display: inline;
+}
+.side-info{
+  margin: 30px 0px;
 }
 .intro{
    width: 50%;
@@ -171,7 +179,12 @@ ul{
   width: auto;
   display: inline-block;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
+  .cv{
+   
+   width: 100%; 
+}
+
   #main{
    display:block;
     padding: 1em;
