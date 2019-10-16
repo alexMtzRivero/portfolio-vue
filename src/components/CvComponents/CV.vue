@@ -10,7 +10,7 @@
      <div class="side-info">
         <div class="personal-info">
             <ul>
-              <li v-for="name in Object.keys(info.personalInformation)" :key="name">{{name}}-{{info.personalInformation[name]}}</li>
+              <li v-for="name in Object.keys(info.personalInformation)" :key="name">{{name}}: <br>{{info.personalInformation[name]}}</li>
             </ul>
         </div>
         <div class="central-img">
@@ -104,10 +104,11 @@ export default {
 .cv{
    background: #f2f2f2;
     color: #403433;
+    width:100%;
+    height:100%;
+    
 }
-.side-info{
-  width: 50%;
-}
+
 #presentation{
   background: #025949;
   color:#f2f2f2;
@@ -131,6 +132,9 @@ img{
 }
 .intro{
    width: 50%;
+}
+.side-info{
+  width: 50%;
 }
 .personal-info{
    width: 100%;
@@ -177,9 +181,14 @@ ul{
       width: 100%;
   }
   #presentation{
-  display: block
-  
+  display: block;
   }
+  .intro{
+   width: 100%;
+}
+.side-info{
+  width: 100%;
+}
 }
 
 </style>
