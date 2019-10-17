@@ -2,9 +2,9 @@
   <div class="home">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
     <!-- <HelloWorld/> -->
-    <!-- <Pong/> -->
+    <Pong/>
 
-    <CV/>
+    <!-- <CV/> -->
   </div>
 </template>
 
