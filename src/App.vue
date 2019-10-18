@@ -16,8 +16,8 @@ export default {
 #app {
    width: 100%;
    height: 100%;
+   background:#2d0922;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 </style>

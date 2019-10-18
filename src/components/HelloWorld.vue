@@ -2,7 +2,13 @@
   <div class="main" v-on:click="nextText()">
     <h1 v-for='text in shown' :key="text"> <span>me@terminal:-$</span> {{text}} </h1>
     <h1><span>me@terminal:-$</span> {{temp}}</h1>
-    <h1 class="options" v-for="(option,ind) in options" :key="ind"></h1>
+     <div v-if="index == text.length-1">
+        <router-link to="/CV"> My Cv </router-link>
+      <a href="https://github.com/alexMtzRivero"> Github </a>
+       <router-link to="/Pong"> play pong </router-link>
+     </div>
+     
+    <!-- <h1 class="options" v-for="(option,ind) in options" :key="ind"></h1> -->
     <h2>click to continue</h2>
   </div>
 </template>
@@ -15,10 +21,16 @@ export default {
   data(){
     return{
         shown:[],
-        text:['hello i am Alejandro ;)',
-              'I have a problem',
-              'I dont know what style to use for this portfolio',
-              'So i will let you decide :)'],
+        text:['hello i am Alex.',
+              'I like to describe myself as a problem solver that uses programming as a tool.',
+              'I have experience in creating mobile applications and websites, therefore, java and JavaScript are listed in my skills. I have also worked for personal and school projects with Vue.js, Python, c++ and Node.js among others.',
+              'Sorry but I’m currently  working in my portfolio',
+              'I can give you 3 options' , 
+              '1.- I can show you my curriculum ',
+              '2.- yo can see my git account ',
+              '3.- Or you can play pong while I finish this website' ,
+              'ls'
+              ],
         
         index:0,
         writing: false,
@@ -27,17 +39,22 @@ export default {
   },
   methods:{
         nextText: function(){
-          if(!this.writing){
+          if(!this.writing && this.index < this.text.length-1  ){
             this.writing = true;
             this.typeText(this.text[this.index],100);
           }
+          else{
+                    this.writing = false;
+                  
+                  this.temp = ""
+          }
         },
         typeText:function(text,speed){
-          if (text.length>0) {
+          if (text.length>0 && this.writing) {
              this.temp+= text.slice(0,1);
            setTimeout(()=>{this.typeText(text.slice(1,text.length),speed)}, Math.floor(Math.random()*200));
             }
-          else{
+          else {
                   this.shown.push(this.text[this.index]);
                   if (this.index < this.text.length-1 ){
                     this.index++;
@@ -56,20 +73,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
   .main{
     margin: 1em;
-    width: 100%;
-    height: 100%;
-    background: black;
+    width: 100vw;
+    height: 100vh;
+    background: #2d0922;
     color: white;
+  }
+  a{
+    color:#6493c3;
+    font-size: large;
+    margin: 0 10px;
   }
   h1{
     margin: 0.15em 0;
+    font-size: large;
   }
   h2{
     position: absolute;
     bottom: 1em;
     text-align: end;
+    font-size:large;
   }
   span{
     color:rgb(76, 255, 60);

@@ -1,6 +1,9 @@
 <template>
+<div class="wrap">
+
+
   <div class="cv">
-    <button @click="print">print</button>
+    <!-- <button @click="print">print</button> -->
     <div id="presentation">
       <div class="intro">
         <h1>{{info.name}}</h1>
@@ -68,6 +71,7 @@
      
   </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -101,7 +105,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.wrap{
+  width: 100%;
+  background: #F2F2F2;
+}
+.home{
+background: #F2F2F2
+}
 .cv{
    background: #f2f2f2;
     color: #403433;
