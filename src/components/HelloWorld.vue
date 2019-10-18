@@ -27,7 +27,7 @@ export default {
               'Sorry but I’m currently  working in my portfolio',
               'I can give you 3 options' , 
               '1.- I can show you my curriculum ',
-              '2.- yo can see my git account ',
+              '2.- you can see my git account ',
               '3.- Or you can play pong while I finish this website' ,
               'ls'
               ],

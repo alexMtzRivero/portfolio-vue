@@ -25,7 +25,7 @@
        </div>
       <div id="main">
         <div class="column">
-          <h1>Profetional experience</h1>
+          <h1>Professional experience</h1>
           <div  v-for="job in info.profesionalExperience"  :key="job.tittle" class="default-list-item">
             <h1 class="post">{{job.tittle}}</h1>
             <h2 class="enterprise">{{job.enterprise}}</h2>
