@@ -1,7 +1,11 @@
 <template>
 <div class="wrap">
 
-
+<div>
+  <img class="flag" src="../../assets/france.png" alt="france flag" @click="changeInfo('french')">
+  <img class="flag" src="../../assets/mexico.png" alt="mexico flag"  @click="changeInfo('spanish')">
+  <img class="flag" src="../../assets/united-kingdom.png" alt="UK flag"  @click="changeInfo('english')">
+</div>
   <div class="cv">
     <!-- <button @click="print">print</button> -->
     <div id="presentation">
@@ -25,7 +29,7 @@
        </div>
       <div id="main">
         <div class="column">
-          <h1>Professional experience</h1>
+          <h1>{{info.headers.profesionalExperience}}</h1>
           <div  v-for="job in info.profesionalExperience"  :key="job.tittle" class="default-list-item">
             <h1 class="post">{{job.tittle}}</h1>
             <h2 class="enterprise">{{job.enterprise}}</h2>
@@ -34,11 +38,11 @@
             <div class="description">{{job.description}}</div>
             <div class="tecnologies">(tecnologies)</div>
           </div> 
-           <h1>Skills</h1>
+           <h1>{{info.headers.skills}}</h1>
           <ul>
             <li v-for="skill in info.skills" :key="skill">{{skill}}</li>
           </ul>
-           <h1>Education</h1>
+           <h1>{{info.headers.education}}</h1>
           <div  v-for="school in info.education"  :key="school.diploma" class="default-list-item">
             <h2 class="diploma">{{school.diploma}}</h2>
             <h3 class="school">{{school.school}}</h3>
@@ -47,7 +51,7 @@
         </div>
         <div class="column">
          
-          <h1>Personal projects</h1>
+          <h1>{{info.headers.personalProjects}}</h1>
            <div  v-for="pp in info.personalProjects"  :key="pp.name" class="default-list-item">
             <h1 class="tittle">{{pp.name}}</h1>
             <div class="date">{{pp.timeBegin}}-{{pp.timeEnd}}</div>
@@ -55,15 +59,15 @@
             <div class="tecnologies">{{pp.skills}}</div>
           </div> 
          
-          <h1>Programig lenguages</h1>
+          <h1>{{info.headers.programingLenguages}}</h1>
           <ul>
             <li v-for="pl in info.programingLenguages" :key="pl.name">{{pl.name}}--{{pl.level}}</li>
           </ul>
-          <h1>Interest</h1>
+          <h1>{{info.headers.interest}}</h1>
            <ul>
             <li v-for="inter in info.interest" :key="inter">{{inter}}</li>
           </ul>
-          <h1>Achivement</h1>
+          <h1>{{info.headers.achivements}}</h1>
           <ul>
             <li v-for="achivement in info.achivements" :key="achivement">{{achivement}}</li>
           </ul>
@@ -93,21 +97,29 @@ export default {
   methods:{
       print: function(){
         window.print();
+      },
+      changeInfo(input){
+        this.info = INFO[input]
       }
   },
   // on create
   mounted(){
     console.log(INFO);
-    this.info = INFO;
+    this.info = INFO.english;
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.flag{
+  width:40px;
+  margin: 10px;
+}
 .wrap{
   width: 100%;
-  background: #F2F2F2;
+   background: #F2F2F2;
+  background: linear-gradient(33deg, rgb(100, 180, 166) 0%, #F2F2F2 100%); 
 }
 .home{
 background: #F2F2F2
