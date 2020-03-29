@@ -275,7 +275,7 @@ ul{
   .column{
       width: 100%;
   }
-  #presentation{
+ .cv #presentation{
   display: block;
   }
   .intro{
