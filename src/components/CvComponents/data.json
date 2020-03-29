@@ -18,9 +18,27 @@
             "PHONE ": "(+52) 614 602 17 21 ",
             "BIRTHDATE": "25 May, 1998",
             "WEBSITE": "https://alexmtzrivero.github.io/#/hello",
+            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
             "GIT": "github.com/alexMtzRivero"
         },
-        "profesionalExperience": [{
+        "profesionalExperience": [
+            {
+                "tittle": "Fullstack developer",
+                "enterprise": "Capvital",
+                "place": " chihuahua, Mexico",
+                "description": "Data optimisation in the critic procces  of a core banking software",
+                "timeBegin": "01/2020",
+                "timeEnd": "today",
+                "skils": ["technologies:", "Laravel", "AngularJs", "Python", "MySql"]
+            },
+            {
+                "tittle": "French teacher ",
+                "enterprise": "UTCH (Chihuahua Tecnologic University)",
+                "place": "chihuahua, Mexico",
+                "description": "I teached 50 unversity students for a semester to get the A2 diploma.",
+                "timeBegin": "01/2019",
+                "timeEnd": "today"
+            },{
                 "tittle": "Fullstack developer/ Research Intern ",
                 "enterprise": "INRIA",
                 "place": " Grenoble, France",
@@ -134,7 +152,8 @@
         ]
 
     },
-    "french": {"name": "Alejandro Martinez Rivero",
+    "french": {
+        "name": "Alejandro Martinez Rivero",
         "post": " Développeur full stack ",
         "introduction": " Programmeur avec plus de 5 ans d'expérience dans le développement de logiciels.",
         "headers":{
@@ -152,9 +171,27 @@
             "PHONE ": "(+52) 614 602 17 21 ",
             "BIRTHDATE": "25 Mai, 1998",
             "WEBSITE":"https://alexmtzrivero.github.io/#/hello",
+            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
             "GIT": "github.com/alexMtzRivero"
         },
-        "profesionalExperience": [{
+        "profesionalExperience": [
+            {
+                "tittle": "Développeur Fullstack",
+                "enterprise": "Capvital",
+                "place": " chihuahua, Mexique",
+                "description": "Optimisation des données dans les processus critiques d'un logiciel core bancaire",
+                "timeBegin": "01/2020",
+                "timeEnd": "aujourd'hui",
+                "skils": ["technologies:", "Laravel", "AngularJs", "Python", "MySql"]
+            },
+            {
+                "tittle": "Professeur de français",
+                "enterprise": "UTCH (Chihuahua Tecnologic University)",
+                "place": "chihuahua, Mexico",
+                "description": "j'ai enseigné à 50 étudiants d'université pour un semestre pour l'obtention du diplôme A2.",
+                "timeBegin": "01/2020",
+                "timeEnd": "aujourd'hui"
+            },{
                 "tittle": " Développeur Fullstack / Stagiaire de recherche",
                 "enterprise": "INRIA",
                 "place": " Grenoble, France",
@@ -251,9 +288,7 @@
             "Deux médailles d'argent au niveau de l'état à l'Olympiade informatique mexicaine en 2014 et 2015"
         ]
     
-    }
-    
-    ,
+    } ,
     "spanish": {
         "name": "Alejandro Martinez Rivero",
         "post": "Desarrollador fullstack",
@@ -273,16 +308,34 @@
             "PHONE": "(+52) 614 602 17 21 ",
             "BIRTHDATE": "25 de Mayo, 1998",
             "WEBSITE":"https://alexmtzrivero.github.io/#/hello",
+            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
             "GIT": "github.com/alexMtzRivero"
         },
-        "profesionalExperience": [{
+        "profesionalExperience": [
+            {
+                "tittle": "Desarrollador Fullstack",
+                "enterprise": "Capvital",
+                "place": " chihuahua, Mexico",
+                "description": "Optimización de consumo y tratamiento datos en los procesos críticos de un software de core bancario",
+                "timeBegin": "01/2020",
+                "timeEnd": "hoy",
+                "skils": ["tecnologías:", "Laravel", "AngularJs", "Python", "MySql"]
+            },
+            {
+                "tittle": "Profesor de francés",
+                "enterprise": "UTCH (Universidad Tecnológica de Chihuahua)",
+                "place": "chihuahua, Mexico",
+                "description": "Enseñé a 50 estudiantes universitarios durante un semestre para obtener el diploma A2",
+                "timeBegin": "01/2019",
+                "timeEnd": "hoy"
+            },{
                 "tittle": " Desarrollador Full Stack / Pasante de investigación",
                 "enterprise": "INRIA",
                 "place": " Grenoble, Francia",
                 "description": " Desarrollar un entorno gráfico y un sistema basado en reglas para modelar el comportamiento de los dispositivos conectados (IoT) y su uso en un hogar inteligente.",
                 "timeBegin": "01/2019",
                 "timeEnd": "07/2019",
-                "skils": ["technologies:", "vue.js", "node.js", "java ", "sqLite"]
+                "skils": ["tecnologías:", "vue.js", "node.js", "java ", "sqLite"]
             },
             {
                 "tittle": " Entrenador ",
@@ -291,7 +344,7 @@
                 "description": " Enseñar a los estudiantes de secundaria programación estructurada para calcular la solución de problemas matemáticos complejos.",
                 "timeBegin": "08/2017",
                 "timeEnd": "04/2018",
-                "skils": ["technologies: c++"]
+                "skils": ["tecnologías: c++"]
             },
             {
                 "tittle": " Desarrollador",
@@ -301,7 +354,7 @@
                 "description": " Programador front y backend de la aplicación móvil para Android ",
                 "timeBegin": "01/2018",
                 "timeEnd": "06/2018",
-                "skils": ["technologies: Java – Firebase"]
+                "skils": ["tecnologías: Java – Firebase"]
             },
             {
                 "tittle": " Desarrollador ",
@@ -311,7 +364,7 @@
                 "description": " optimizar los procesos de consumo de datos ",
                 "timeBegin": "06/2017 ",
                 "timeEnd": "11/2017",
-                "skils": ["technologies: PHP ,JavaScript – MySql"]
+                "skils": ["tecnologías: PHP ,JavaScript – MySql"]
             }
     
         ],
