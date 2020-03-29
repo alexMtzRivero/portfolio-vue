@@ -1,12 +1,14 @@
 <template>
   <div class="main" v-on:click="nextText()">
     <h1 v-for='text in shown' :key="text"> <span>me@terminal:-$</span> {{text}} </h1>
-    <h1><span>me@terminal:-$</span> {{temp}}</h1>
      <div v-if="index == text.length-1">
         <router-link to="/CV"> My Cv </router-link>
+      <a href="linkedin.com/in/alejandro-martinez-rivero-116836120"> LinkedIn </a>
       <a href="https://github.com/alexMtzRivero"> Github </a>
        <router-link to="/Pong"> play pong </router-link>
      </div>
+    <h1><span>me@terminal:-$</span> {{temp}}</h1>
+    
      
     <!-- <h1 class="options" v-for="(option,ind) in options" :key="ind"></h1> -->
     <h2>click to continue</h2>
@@ -26,10 +28,10 @@ export default {
               'I have experience in creating mobile applications and websites, therefore, java and JavaScript are listed in my skills. I have also worked for personal and school projects with Vue.js, Python, c++ and Node.js among others.',
               'Sorry but I’m currently  working in my portfolio',
               'I can give you 3 options' , 
-              '1.- I can show you my curriculum ',
+              '1.- I can show you my curriculum and LinkedIn account ',
               '2.- you can see my git account ',
-              '3.- Or you can play pong while I finish this website' ,
-              'ls'
+              '3.- Or you can play pong while I finish this website' ,'ls',
+              ''
               ],
         
         index:0,
