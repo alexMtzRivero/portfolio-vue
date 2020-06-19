@@ -19,12 +19,10 @@
      <div class="side-info">
         <div class="personal-info">
             <ul>
-              <li v-for="name in Object.keys(info.personalInformation)" :key="name"><b>{{name}}</b> <br>{{info.personalInformation[name]}}<br><br><br></li>
+              <li v-for="name in Object.keys(info.personalInformation)" :key="name"><b>{{name}}</b> <br>{{info.personalInformation[name]}}<br><br></li>
             </ul>
         </div>
-        <div class="central-img">
-       
-        </div>
+        
      </div>
       
        </div>
@@ -37,7 +35,9 @@
             <div class="date">{{job.timeBegin}}-{{job.timeEnd}}</div>
             <div class="place">{{job.place}}</div>
             <div class="description">{{job.description}}</div>
-            <div v-for="skil in job.skils"  :key="skil" class="tecnologies">{{skil}}</div>
+            <div class="skillContainer">
+              <div v-for="skil in job.skills"  :key="skil" class="tecnologies">{{skil}}</div>
+            </div>
           </div> 
            <h1>{{info.headers.skills}}</h1>
           <ul>
@@ -55,12 +55,14 @@
             <h2 class="tittle">{{pp.name}}</h2>
             <div class="date">{{pp.timeBegin}}-{{pp.timeEnd}}</div>
             <div class="description">{{pp.description}}</div>
-            <div class="tecnologies">{{pp.skills}}</div>
+            <div class="skillContainer">
+             <div class="tecnologies">{{pp.skills}}</div>
+            </div>
           </div> 
          
           <h1>{{info.headers.programingLenguages}}</h1>
           <ul>
-            <li v-for="pl in info.programingLenguages" :key="pl.name">{{pl.name}}</li>
+            <li v-for="pl in programingLenguages" :key="pl.name">{{pl.name}}</li>
           </ul>
           <h1>{{info.headers.education}}</h1>
           <div  v-for="school in info.education"  :key="school.diploma" class="default-list-item">
@@ -93,7 +95,8 @@ export default {
   data(){
     return{
       info:{"personalInformation":{}},
-      printing :false
+      printing :false,
+      programingLenguages:[],
     }
   },
   methods:{
@@ -107,6 +110,7 @@ export default {
   // on create
   mounted(){
     this.info = INFO.english;
+    this.programingLenguages =INFO.programingLenguages
   }
 }
 </script>
@@ -134,7 +138,17 @@ background: #F2F2F2
    width: 700px;
    margin:auto;  
 }
-
+.description{
+  text-align: justify;
+  font-weight: bold;
+}
+.skillContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tecnologies{
+  margin-right:5px;
+}
  button{
    background-color: #0093E9;
    color:#f2f2f2;
@@ -161,9 +175,9 @@ background: #F2F2F2
     margin: 0 1em ;
 }
 .cv img{
-  width: 50%;
+  width: 30%;
   height: auto;
-  margin: auto 0;
+  margin: auto ;
   border-radius: 50%;
   border: solid .4rem rgba(0, 0, 0, 0.438);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -171,9 +185,6 @@ background: #F2F2F2
 }
 .personal-info li{
   display: inline;
-}
-.side-info{
-  margin: 30px 0px;
 }
 .intro{
    width: 50%;
@@ -194,14 +205,29 @@ background: #F2F2F2
    padding: 1em;
    border-left: solid .2rem #403433;
 }
+#presentation h1{
+  margin: 0px;
+  font-size: x-large;
+}
+#presentation h2{
+  margin: 10px 0px;
+  font-size: large;
+}
+#presentation h3{
+  margin: 10px 0px;
+  font-size: medium;
+}
 #main h1{
-  color:#0093E9;
+  color:#00D2E8;
+  margin:10px;
 }
 #main h2{
-   color:#00D2E8;
+   color:#0093E9;
+    margin: 4px;
 }
 #main h3{
   color: #00D2E8;
+  margin: 0px 24px;
 }
 ul{
   display:flexbox;
@@ -210,12 +236,13 @@ ul{
 #main li{
   background:#0093E9;
   color: #F2F2F2;
-  margin: 5px;
+  margin: 2px;
   padding: 10px;
   border-radius: 10px;
   width: auto;
   display: inline-block;
 }
+@page { size: auto;  margin: 0mm; }
 @media print {
   .upBar{
   display: none;
