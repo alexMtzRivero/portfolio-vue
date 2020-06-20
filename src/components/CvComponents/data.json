@@ -7,6 +7,12 @@
         {"name":"Java","level":5},
         {"name":"Python","level":5}
     ],
+    "personalInformation": {
+        "E-MAIL": "alejandro.martinez.0598@gmail.com",
+        "WEBSITE": "https://alexmtzrivero.github.io/",
+        "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
+        "GIT": "github.com/alexMtzRivero"
+    },
     "english": {
         "name": "Alejandro Martinez Rivero",
         "post": "Full stack developer",
@@ -21,12 +27,7 @@
             "personalProjects": "Personal projects",
             "achivements": "Achivements"
         },
-        "personalInformation": {
-            "E-MAIL": "alejandro.martinez.0598@gmail.com",
-            "WEBSITE": "https://alexmtzrivero.github.io/#/hello",
-            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
-            "GIT": "github.com/alexMtzRivero"
-        },
+       
         "profesionalExperience": [
             {
                 "tittle": "Fullstack developer",
@@ -41,7 +42,7 @@
                 "tittle": "French teacher ",
                 "enterprise": "UTCH (Chihuahua Tecnologic University)",
                 "place": "Chihuahua, Mexico",
-                "description": "I teached 50 unversity students for a semester to get the A2 diploma.",
+                "description": "I taught 50 university students for a semester to get the A2 diploma.",
                 "timeBegin": "01/2020",
                 "timeEnd": "05/2020",
                 "skills": ["Soft skills:","Public speaking", "Team management ","Leadership"]
@@ -58,7 +59,7 @@
                 "tittle": "Coach",
                 "enterprise": "Mexican Olympiad in Informatics",
                 "place": "Mexico",
-                "description": "To teach high school students structured programming to calculate the solution of complex mathematical problems.",
+                "description": "I taught high school students structured programming, data structures and algorithms to calculate the solution of complex mathematical problems.",
                 "timeBegin": "08/2017",
                 "timeEnd": "04/2018",
                 "skills": ["Technologies: C++"]
@@ -68,10 +69,10 @@
                 "enterprise": "Naby",
                 "enterpriseDescription": "Mobile application to hire baby sitters",
                 "place": "Mexico",
-                "description": "Programmer front and backend of the mobile app for Android. ",
+                "description": "Full stack developer on a mobile app for Android to help users contact babysitters. Using firebase to provide a NoSql database, push notifications and oAuth. ",
                 "timeBegin": "01/2018",
                 "timeEnd": "06/2018",
-                "skills": ["technologies: Java – Firebase"]
+                "skills": ["technologies:", "Java" , "Firebase"]
             }
            
         ],
@@ -125,7 +126,7 @@
                 "name": "Vitae",
                 "timeBegin": "01/2015",
                 "timeEnd": "05/2015",
-                "description": "Front end and backend programmer of the mobile application for Android that allows children with disabilities to communicate through a smart keyboard.",
+                "description": "Front-end development of a mobile application for Android that allows children with disabilities to communicate through a smart keyboard.",
                 "skills": ""
             }
         ],
@@ -149,12 +150,6 @@
             "interest":" INTÉRÊTS",
             "personalProjects":" PROJETS PERSONELS",
             "achivements":" RÉUSSITES"
-        },
-        "personalInformation": {
-            "E-MAIL": "alejandro.martinez.0598@gmail.com",
-            "WEBSITE":"https://alexmtzrivero.github.io/#/hello",
-            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
-            "GIT": "github.com/alexMtzRivero"
         },
         "profesionalExperience": [
             {
@@ -275,12 +270,6 @@
             "interest":"gustos",
             "personalProjects":"Proyectos personales",
             "achivements":" Logros"
-        },
-        "personalInformation": {
-            "E-MAIL": "alejandro.martinez.0598@gmail.com",
-            "WEBSITE":"https://alexmtzrivero.github.io/#/hello",
-            "LINKEDIN":"linkedin.com/in/alejandro-martinez-rivero-116836120",
-            "GIT": "github.com/alexMtzRivero"
         },
         "profesionalExperience": [
             {

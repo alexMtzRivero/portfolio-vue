@@ -3,8 +3,8 @@
     <h1 v-for='text in shown' :key="text"> <span>me@terminal:-$</span> {{text}} </h1>
      <div v-if="index == text.length-1">
         <router-link to="/CV"> My Cv </router-link>
-      <a href="linkedin.com/in/alejandro-martinez-rivero-116836120"> LinkedIn </a>
-      <a href="https://github.com/alexMtzRivero"> Github </a>
+      <a target="_blank" href="https://linkedin.com/in/alejandro-martinez-rivero-116836120"> LinkedIn </a>
+      <a target="_blank" href="https://github.com/alexMtzRivero"> Github </a>
        <router-link to="/Pong"> play pong </router-link>
      </div>
     <h1><span>me@terminal:-$</span> {{temp}}</h1>

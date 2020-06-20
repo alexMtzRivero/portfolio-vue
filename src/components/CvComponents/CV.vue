@@ -19,7 +19,7 @@
      <div class="side-info">
         <div class="personal-info">
             <ul>
-              <li v-for="name in Object.keys(info.personalInformation)" :key="name"><b>{{name}}</b> <br>{{info.personalInformation[name]}}<br><br></li>
+              <li v-for="name in Object.keys(personalInformation)" :key="name"><b>{{name}}</b> <br>{{personalInformation[name]}}<br><br></li>
             </ul>
         </div>
         
@@ -110,7 +110,8 @@ export default {
   // on create
   mounted(){
     this.info = INFO.english;
-    this.programingLenguages =INFO.programingLenguages
+    this.programingLenguages = INFO.programingLenguages;
+    this.personalInformation = INFO.personalInformation;
   }
 }
 </script>
