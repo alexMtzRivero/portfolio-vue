@@ -39,18 +39,17 @@
               <div v-for="skil in job.skills"  :key="skil" class="tecnologies">{{skil}}</div>
             </div>
           </div> 
-           <h1>{{info.headers.skills}}</h1>
+          <MHeader>{{info.headers.skills}}</MHeader>
           <ul>
             <li v-for="skill in info.skills" :key="skill">{{skill}}</li>
           </ul>
-          <h1>{{info.headers.interest}}</h1>
+          <MHeader>{{info.headers.interest}}</MHeader>
            <ul>
             <li v-for="inter in info.interest" :key="inter">{{inter}}</li>
           </ul>
         </div>
         <div class="column">
-         
-          <h1>{{info.headers.personalProjects}}</h1>
+          <MHeader>{{info.headers.personalProjects}}</MHeader>
            <div  v-for="pp in info.personalProjects"  :key="pp.name" class="default-list-item">
             <h2 class="tittle">{{pp.name}}</h2>
             <div class="date">{{pp.timeBegin}}-{{pp.timeEnd}}</div>
@@ -59,18 +58,17 @@
              <div class="tecnologies">{{pp.skills}}</div>
             </div>
           </div> 
-         
-          <h1>{{info.headers.programingLenguages}}</h1>
+          <MHeader>{{info.headers.programingLenguages}}</MHeader>
           <ul>
             <li v-for="pl in programingLenguages" :key="pl.name">{{pl.name}}</li>
           </ul>
-          <h1>{{info.headers.education}}</h1>
+          <MHeader>{{info.headers.education}}</MHeader>
           <div  v-for="school in info.education"  :key="school.diploma" class="default-list-item">
             <h2 class="diploma">{{school.diploma}}</h2>
             <h3 class="school">{{school.school}}</h3>
             <div class="date">{{school.timeBegin}}-{{school.timeEnd}}</div>
-          </div> 
-          <h1>{{info.headers.achivements}}</h1>
+          </div>
+          <MHeader>{{info.headers.achivements}}</MHeader>
           <ul>
             <li v-for="achivement in info.achivements" :key="achivement">{{achivement}}</li>
           </ul>
