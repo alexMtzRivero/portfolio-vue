@@ -77,7 +77,7 @@ export default {
 <style scoped>
 
   .main{
-    margin: 1em;
+    padding: 1em;
     width: 100vw;
     height: 100vh;
     background: #2d0922;

@@ -14,7 +14,7 @@
         <h1>{{info.name}}</h1>
         <h2>{{info.post}}</h2>
         <h3>{{info.introduction}}</h3>
-         <img src="../../assets/profile.png" alt="">
+         <img src="@/assets/me.jpeg" alt="">
       </div>
      <div class="side-info">
         <div class="personal-info">
@@ -25,10 +25,10 @@
         
      </div>
       
-       </div>
+    </div>
       <div id="main">
         <div class="column">
-          <h1>{{info.headers.profesionalExperience}}</h1>
+          <MHeader>{{info.headers.profesionalExperience}}</MHeader>
           <div  v-for="job in info.profesionalExperience"  :key="job.tittle" class="default-list-item">
             <h2 class="post">{{job.tittle}}</h2>
             <h3 class="enterprise">{{job.enterprise}}</h3>
@@ -83,10 +83,11 @@
 
 <script>
 const   INFO = require("./data.json");
+import MHeader from "./MHeader"
 export default {
   name: 'CV',
   components:{
-
+    MHeader
   },
   props: {
 
@@ -116,8 +117,12 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+$black:#070000;
+$l-back:#282828;
+$yellow: #d9dd0b;
+
+
 .flag{
   width:40px;
   margin: 10px;
