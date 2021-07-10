@@ -400,12 +400,16 @@ ul {
 @media screen and (max-width: 700px) {
   .cv {
     width: 100%;
+    overflow: hidden;
   }
 
   #main {
     display: block;
     padding: 1em;
     margin: 0 1em;
+  }
+  .black-apendice {
+    display: block;
   }
 
   .column {
