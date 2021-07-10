@@ -49,4 +49,12 @@ h2 {
     direction: rtl;
   }
 }
+.black-apendice {
+  h2 {
+    color: white;
+  }
+  .decoration {
+    background: #070000;
+  }
+}
 </style>

@@ -32,7 +32,8 @@
           <div class="personal-info">
             <ul>
               <li v-for="name in Object.keys(personalInformation)" :key="name">
-                <b>{{ name }}</b> <br />{{ personalInformation[name]
+                <b class="personal-info-name">{{ name }}</b> <br />{{
+                  personalInformation[name]
                 }}<br /><br />
               </li>
             </ul>
@@ -59,14 +60,6 @@
               </div>
             </div>
           </div>
-          <MHeader>{{ info.headers.skills }}</MHeader>
-          <ul>
-            <li v-for="skill in info.skills" :key="skill">{{ skill }}</li>
-          </ul>
-          <MHeader>{{ info.headers.interest }}</MHeader>
-          <ul>
-            <li v-for="inter in info.interest" :key="inter">{{ inter }}</li>
-          </ul>
         </div>
         <div class="column">
           <MHeader right>{{ info.headers.personalProjects }}</MHeader>
@@ -84,11 +77,15 @@
           </div>
           <MHeader right>{{ info.headers.programingLenguages }}</MHeader>
           <ul>
-            <li v-for="pl in programingLenguages" :key="pl.name">
+            <li class="pill" v-for="pl in programingLenguages" :key="pl.name">
               {{ pl.name }}
             </li>
           </ul>
-          <MHeader right>{{ info.headers.education }}</MHeader>
+        </div>
+      </div>
+      <div class="black-apendice">
+        <div class="column">
+          <MHeader>{{ info.headers.education }}</MHeader>
           <div
             v-for="school in info.education"
             :key="school.diploma"
@@ -98,10 +95,29 @@
             <h3 class="school">{{ school.school }}</h3>
             <div class="date">{{ school.timeBegin }}-{{ school.timeEnd }}</div>
           </div>
-          <MHeader right>{{ info.headers.achivements }}</MHeader>
+          <MHeader>{{ info.headers.skills }}</MHeader>
           <ul>
-            <li v-for="achivement in info.achivements" :key="achivement">
-              {{ achivement }}
+            <li class="pill" v-for="skill in info.skills" :key="skill">
+              {{ skill }}
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <MHeader right>{{ info.headers.achivements }}</MHeader>
+
+          <div
+            class="achivement"
+            v-for="achivement in info.achivements"
+            :key="achivement"
+          >
+            <div class="decoration"></div>
+            {{ achivement }}
+          </div>
+
+          <MHeader right>{{ info.headers.interest }}</MHeader>
+          <ul>
+            <li class="pill" v-for="inter in info.interest" :key="inter">
+              {{ inter }}
             </li>
           </ul>
         </div>
@@ -288,7 +304,7 @@ ul {
   padding-left: 0px;
 }
 
-#main li {
+.pill {
   background: $yellow;
   color: $black;
   margin: 2px;
@@ -296,6 +312,37 @@ ul {
   border-radius: 10px;
   width: auto;
   display: inline-block;
+}
+.black-apendice {
+  display: flex;
+  padding: 1em;
+  border-radius: 20px 20px 0 0;
+  background: $lblack;
+  .school {
+    color: white;
+  }
+  .date {
+    color: white;
+  }
+  .achivement {
+    color: white;
+    margin: 15px 0px;
+    font-size: medium;
+  }
+  .decoration {
+    background: #d9dd0b;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    width: 40px;
+    height: 10px;
+    z-index: -1;
+    border-radius: 3px 3px 0 0;
+  }
+}
+.personal-info-name {
+  letter-spacing: 3px;
+  font-size: medium;
 }
 
 @page {

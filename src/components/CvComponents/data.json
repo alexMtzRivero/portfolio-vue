@@ -21,7 +21,7 @@
             "personalInformation": "Personal information",
             "profesionalExperience": "Professional experience",
             "education": "Education",
-            "skills": "Skills",
+            "skills": "Soft skills",
             "programingLenguages": "Technologies",
             "interest": "Dev for fun",
             "personalProjects": "Personal projects",
@@ -31,11 +31,20 @@
         "profesionalExperience": [
             {
                 "tittle": "Fullstack developer",
+                "enterprise": "OneRagtime",
+                "place": " Barcelona, Spain",
+                "description": "Test driven development to deliver full features, i was involved from the architecture phase of solving the problem, implementation of business logics ,visual interface and polishing of User experience.",
+                "timeBegin": "10/2020",
+                "timeEnd": "10/2021",
+                "skills": ["technologies:", "Django", "vue.js", "Python", "MySql"]
+            },
+            {
+                "tittle": "Fullstack developer",
                 "enterprise": "Capvital",
                 "place": " Chihuahua, Mexico",
                 "description": "Data optimisation in the critical processes of a core banking software.",
                 "timeBegin": "01/2020",
-                "timeEnd": "today",
+                "timeEnd": "10/2020",
                 "skills": ["technologies:", "Laravel", "AngularJs", "Python", "MySql"]
             },
             {
@@ -76,7 +85,14 @@
             }
            
         ],
-        "education": [{
+        "education": [
+            {
+                "diploma": "Master in data science",
+                "timeBegin": "09/2020",
+                "timeEnd": "09/2021",
+                "school": "Harbour.space University (Spain)"
+            },
+            {
                 "diploma": "Bachelors - Mobile Systems and Nomad Interface",
                 "timeBegin": "09/2018 ",
                 "timeEnd": "07/2019",
@@ -154,11 +170,20 @@
         "profesionalExperience": [
             {
                 "tittle": "Développeur Fullstack",
+                "enterprise": "OneRagtime",
+                "place": " Barcelone, Espagne",
+                "description": "TDD pour fournir des fonctionnalités complètes, pour la résolution des problèmes j'ai été impliqué dès la phase d'architecture , la mise en œuvre de logiques métier, l'interface visuelle et le polissage de l'expérience utilisateur. ",
+                "timeBegin": "10/2020",
+                "timeEnd": "10/2021",
+                "skills": ["technologies:", "Django", "vue.js", "Python", "MySql"]
+            },
+            {
+                "tittle": "Développeur Fullstack",
                 "enterprise": "Capvital",
                 "place": " Chihuahua, Mexique",
                 "description": "Optimisation des données dans les processus critiques d'un logiciel core bancaire.",
                 "timeBegin": "01/2020",
-                "timeEnd": "aujourd'hui",
+                "timeEnd": "10/2020",
                 "skills": ["technologies:", "Laravel", "AngularJs", "Python", "MySql"]
             },
             {
@@ -198,7 +223,14 @@
                 "skills": ["Technologies: Java – Firebase"]
             }
         ],
-        "education": [{
+        "education": [
+            {
+                "diploma": "Master en science des données",
+                "timeBegin": "09/2020",
+                "timeEnd": "09/2021",
+                "school": "Université Harbour.space Espagne"
+            },
+            {
                 "diploma": " LP - Systèmes Mobiles et Interface Nomad",
                 "timeBegin": "09/2018 ",
                 "timeEnd": "07/2019",
@@ -274,11 +306,20 @@
         "profesionalExperience": [
             {
                 "tittle": "Desarrollador Fullstack",
+                "enterprise": "OneRagtime",
+                "place": " Barcelona, España",
+                "description": "TDD para ofrecer funciones completas, para resolver el problema participé desde la fase de arquitectura, la implementación de la lógica empresarial, la interfaz visual y el pulido de la experiencia deusuario. ",
+                "timeBegin": "10/2020",
+                "timeEnd": "10/2021",
+                "skills": ["Tecnologías:", "Django", "vue.js", "Python", "MySql"]
+            },
+            {
+                "tittle": "Desarrollador Fullstack",
                 "enterprise": "Capvital",
                 "place": " Chihuahua, Mexico",
                 "description": "Optimización de consumo y tratamiento datos en los procesos críticos de un software de core bancario.",
                 "timeBegin": "01/2020",
-                "timeEnd": "hoy",
+                "timeEnd": "10/2020",
                 "skills": ["Tecnologías:", "Laravel", "AngularJs", "Python", "MySql"]
             },
             {
@@ -319,7 +360,15 @@
             }
     
         ],
-        "education": [{
+        "education": [
+            {
+                "diploma": "Maestría en ciencias de datos",
+                "timeBegin": "09/2020",
+                "timeEnd": "09/2021",
+                "school": " Universidad Harbour.space España "
+            },
+            
+            {
                 "diploma": " licencia profesional: sistemas móviles e interfaz nómada",
                 "timeBegin": "09/2018 ",
                 "timeEnd": "07/2019",
