@@ -3,19 +3,19 @@
     <div class="upBar">
       <img
         class="flag"
-        src="../../assets/france.png"
+        src="@/assets/france.png"
         alt="france flag"
         @click="changeInfo('french')"
       />
       <img
         class="flag"
-        src="../../assets/mexico.png"
+        src="@/assets/mexico.png"
         alt="mexico flag"
         @click="changeInfo('spanish')"
       />
       <img
         class="flag"
-        src="../../assets/united-kingdom.png"
+        src="@/assets/united-kingdom.png"
         alt="UK flag"
         @click="changeInfo('english')"
       />
@@ -164,6 +164,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
 $black: #070000;
 $lblack: #282828;
 $yellow: #d9dd0b;
@@ -194,6 +196,7 @@ $yellow: #d9dd0b;
   background: #f2f2f2;
   color: #403433;
   margin: auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .description {
@@ -202,7 +205,7 @@ $yellow: #d9dd0b;
   margin: 5px;
   margin-left: 30px;
   letter-spacing: 1px;
-  color: #5a5a5a;
+  color: #292323;
 }
 
 .skillContainer {

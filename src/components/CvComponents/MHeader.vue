@@ -35,7 +35,7 @@ h1 {
     width: 40px;
     position: relative;
     left: -60px;
-    top: 16px;
+    top: 18px;
   }
 }
 .right {
@@ -47,7 +47,7 @@ h1 {
     width: 40px;
     position: relative;
     right: -60px;
-    top: 16px;
+    top: 18px;
   }
 }
 .black-apendice {
