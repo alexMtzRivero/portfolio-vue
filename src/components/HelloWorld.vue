@@ -31,7 +31,9 @@ export default {
       text: [
         "hello i am Alex.",
         "I like to describe myself as a problem solver that uses programming as a tool.",
-        "I have experience in creating mobile applications and websites, therefore, java and JavaScript are listed in my skills. I have also worked for personal and school projects with Vue.js, Python, c++ and Node.js among others.",
+        "I'm currently working as a fullstack developer and finishing a masters degree in Computer science,I have experience in a lot of branches of software development.",
+        "Before i spent my time creating mobile applications and websites, therefore, java and JavaScript are listed in my skills. I have also worked for personal and school projects with Vue.js, Python, c++ and Node.js among others.",
+        "I consider, adaptability one of my biggest strengths, don't hesitate to contact me,  i will tell you more about what've done",
         "Sorry but I’m currently  working in my portfolio",
         "I can give you 3 options",
         "1.- I can show you my curriculum and LinkedIn account ",
